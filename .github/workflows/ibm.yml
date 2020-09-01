@@ -72,7 +72,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud target -r eu-gb
         ./IBM_Cloud_CLI/ibmcloud target -g "$RESOURSE_ID_EN"
         ./IBM_Cloud_CLI/ibmcloud target --cf
-        ./IBM_Cloud_CLI/ibmcloud cf install
+        ./IBM_Cloud_CLI/ibmcloud cf install -v 6.51.0
     - name: Restart IBM Cloud EN
       env:
         IBM_APP_NAME_EN: ${{ secrets.IBM_APP_NAME_EN }}
